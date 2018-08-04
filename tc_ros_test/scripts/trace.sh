@@ -78,6 +78,11 @@ sleep $sleep_time
 echo "killing"
 kill $!
 
+# wait again for everything to shutdown
+echo "waiting for shutdown..."
+sleep 2
+echo "stopping"
+
 # stop & destroy
 lttng stop
 lttng destroy
