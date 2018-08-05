@@ -15,12 +15,16 @@ int main(int argc, char** argv) {
 
     ros::NodeHandle n_p("~");
     int numPubs = 0;
+    bool doLatching = false;
     n_p.getParam(NUM_PUB, numPubs);
+    n_p.getParam(LATCHING, doLatching);
 
-    ros::Publisher pub = n.advertise<std_msgs::String>(TOPIC, PUB_QUEUE_SIZE);
+    ros::Publisher pub = n.advertise<std_msgs::String>(TOPIC, PUB_QUEUE_SIZE, doLatching);
 
-    // Make sure the subscriber has time to subscribe
-    ros::Duration(PUB_SLEEP_TIME).sleep();
+    if (!doLatching) {
+        // Make sure the subscriber has time to subscribe if latching is not on
+        ros::Duration(PUB_SLEEP_TIME).sleep();
+    }
 
     std_msgs::String msg;
     msg.data = PUB_MSG_CONTENT;

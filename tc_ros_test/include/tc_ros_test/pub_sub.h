@@ -11,6 +11,7 @@
 #define PUB_QUEUE_SIZE 4
 #define PUB_SLEEP_TIME 2.0
 #define NUM_PUB "num_pubs"
+#define LATCHING "latching"
 
 #define SUB_NODE_NAME "sub"
 #define SUB_QUEUE_SIZE 2

@@ -6,10 +6,12 @@
 
 <launch>
     <arg name="num_pubs" default="10" />
+    <arg name="latching" default="false" />
 
     <node pkg="tc_ros_test" type="sub_node" name="sub_node" output="screen" />
 
     <node pkg="tc_ros_test" type="pub_node" name="pub_node" output="screen" >
         <param name="num_pubs" type="int" value="$(arg num_pubs)" />
+        <param name="latching" type="bool" value="$(arg latching)" />
     </node>
 </launch>
