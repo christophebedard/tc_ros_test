@@ -58,7 +58,7 @@ launch_cmd+=" &"
 ## Trace
 
 # create lttng session (and set output to traces/ directory)
-lttng create $session_name --output=./${BASH_SOURCE%/*}/../traces/$session_name/
+lttng create $session_name --output=./${BASH_SOURCE%/*}/../../traces/$session_name/
 
 # enable events (this assumes that tracetools is in the same src/ directory)
 ./${BASH_SOURCE%/*}/../../../tracetools/scripts/setup-lttng-roscpp.sh
