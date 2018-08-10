@@ -1,6 +1,6 @@
 /**
  * \file pub.cpp
- * \brief Simple publisher node
+ * \brief Publisher node
  * \author Christophe Bedard
  */
 

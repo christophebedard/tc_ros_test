@@ -1,6 +1,6 @@
 /**
  * \file sub.cpp
- * \brief Simple subscriber node
+ * \brief Subscriber node
  * \author Christophe Bedard
  */
 

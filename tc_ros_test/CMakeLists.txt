@@ -32,3 +32,11 @@ add_executable(sub_node
 target_link_libraries(sub_node
     ${catkin_LIBRARIES}
 )
+
+# multi_instances
+add_executable(instance_node
+    src/multi_instances/instance.cpp
+)
+target_link_libraries(instance_node
+    ${catkin_LIBRARIES}
+)

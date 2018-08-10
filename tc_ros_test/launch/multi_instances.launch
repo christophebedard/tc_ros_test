@@ -1,0 +1,11 @@
+<!--
+ \file multi_instances.launch
+ \brief Launch file for the multiple node instances test case
+ \author Christophe Bedard
+-->
+
+<launch>
+    <node pkg="tc_ros_test" type="instance_node" name="instance_1" />
+    <node pkg="tc_ros_test" type="instance_node" name="instance_2" />
+    <node pkg="tc_ros_test" type="instance_node" name="instance_3" />
+</launch>
