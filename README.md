@@ -1,4 +1,4 @@
-# tracecompass_ros_testcases
+# tracecompass_ros_testcases [![Build Status](https://travis-ci.org/christophebedard/tracecompass_ros_testcases.svg?branch=master)](https://travis-ci.org/christophebedard/tracecompass_ros_testcases)
 
 Test cases package for Trace Compass Incubator ROS plugin.
 
