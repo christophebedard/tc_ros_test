@@ -1,14 +1,14 @@
-# tc_ros_test
+# tracecompass_ros_testcases
 
-Test package for Trace Compass Incubator ROS plugin.
+Test cases package for Trace Compass Incubator ROS plugin.
 
 # Tracing
 
-See the [`trace.sh`](./tc_ros_test/scripts/trace.sh) script.
+See the [`trace.sh`](./tracecompass_ros_testcases/scripts/trace.sh) script.
 
 # Traces
 
-Some test traces are available in [`traces/`](./traces/). The scripts used to generate those traces are in [`tc_ros_test/scripts/`](./tc_ros_test/scripts/).
+Some test traces are available in [`traces/`](./traces/). The scripts used to generate those traces are in [`tracecompass_ros_testcases/scripts/`](./tracecompass_ros_testcases/scripts/).
 
 ## Test cases
 
