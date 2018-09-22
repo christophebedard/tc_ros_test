@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 2.8.3)
-project(tc_ros_test)
+project(tracecompass_ros_testcases)
 
 find_package(catkin REQUIRED COMPONENTS
     roscpp
