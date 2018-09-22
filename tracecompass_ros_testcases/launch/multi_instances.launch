@@ -5,7 +5,7 @@
 -->
 
 <launch>
-    <node pkg="tc_ros_test" type="instance_node" name="instance_1" />
-    <node pkg="tc_ros_test" type="instance_node" name="instance_2" />
-    <node pkg="tc_ros_test" type="instance_node" name="instance_3" />
+    <node pkg="tracecompass_ros_testcases" type="instance_node" name="instance_1" />
+    <node pkg="tracecompass_ros_testcases" type="instance_node" name="instance_2" />
+    <node pkg="tracecompass_ros_testcases" type="instance_node" name="instance_3" />
 </launch>

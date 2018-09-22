@@ -6,7 +6,7 @@
 ##  1. a session name [optional; 'ros' will be used]
 ##  2. a wait time before killing and stopping (in seconds)
 ##  3. a roslaunch/rosrun command
-## ex: ./trace.sh 3 roslaunch tc_ros_test pub_sub.launch
+## ex: ./trace.sh 3 roslaunch tracecompass_ros_testcases pub_sub.launch
 
 ## Parameters
 
@@ -20,7 +20,7 @@ elif [ "$1" == "-h" ] ; then
         "1. the lttng session name [optional; 'ros' will be used]\n" \
         "2. the wait time before killing and stopping (in seconds)\n" \
         "3. the roslaunch/rosrun command\n" \
-    "Example: ./trace.sh ros-trace 3 roslaunch tc_ros_test pub_sub.launch"
+    "Example: ./trace.sh ros-trace 3 roslaunch tracecompass_ros_testcases pub_sub.launch"
     exit 0
 fi
 
