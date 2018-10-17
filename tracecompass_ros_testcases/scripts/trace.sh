@@ -67,7 +67,7 @@ lttng create $session_name --output=./${BASH_SOURCE%/*}/../../traces/$session_na
 lttng start
 
 # preload UST library
-LD_PRELOAD=/usr/lib/x86_64-linux-gnu/liblttng-ust-cyg-profile.so
+# export LD_PRELOAD=/usr/lib/x86_64-linux-gnu/liblttng-ust-cyg-profile.so
 
 # launch
 eval "$launch_cmd"
