@@ -24,6 +24,7 @@ lttng add-context -c roscpp -u \
   -t perf:thread:cycles -t perf:thread:cpu-cycles
 
 # kernel
+lttng enable-channel --kernel kchan --subbuf-size=8M
 for event in sched_switch sched_waking sched_pi_setprio sched_process_fork sched_process_exit sched_process_free sched_wakeup\
     irq_softirq_entry irq_softirq_raise irq_softirq_exit irq_handler_entry irq_handler_exit\
     lttng_statedump_process_state lttng_statedump_start lttng_statedump_end lttng_statedump_network_interface lttng_statedump_block_device\
