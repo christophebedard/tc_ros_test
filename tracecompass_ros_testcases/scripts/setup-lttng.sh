@@ -32,5 +32,4 @@ lttng enable-event -k \
     block_bio_frontmerge,sched_migrate,sched_migrate_task,power_cpu_frequency,\
     net_dev_queue,netif_receive_skb,net_if_receive_skb,\
     timer_hrtimer_start,timer_hrtimer_cancel,timer_hrtimer_expire_entry,timer_hrtimer_expire_exit
-
 lttng enable-event -k --syscall --all
