@@ -8,6 +8,8 @@
 ##  3. a roslaunch/rosrun command
 ## ex: ./trace.sh 3 roslaunch tracecompass_ros_testcases pub_sub.launch
 
+source ./${BASH_SOURCE%/*}/../../../../devel/setup.bash
+
 ## Parameters
 
 # if no parameters were given, exit with error 
@@ -67,7 +69,7 @@ lttng create $session_name --output=./${BASH_SOURCE%/*}/../../traces/$session_na
 lttng start
 
 # preload UST library
-# export LD_PRELOAD=/usr/lib/x86_64-linux-gnu/liblttng-ust-cyg-profile.so
+export LD_PRELOAD=/usr/lib/x86_64-linux-gnu/liblttng-ust-cyg-profile.so
 
 # launch
 eval "$launch_cmd"
