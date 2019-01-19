@@ -9,11 +9,11 @@ cache:
 
 branches:
   only:
-    - kinetic-devel
+    - melodic-devel
 
 env:
   global:
-    - ROS_DISTRO=kinetic
+    - ROS_DISTRO=melodic
     - ROS_CI_DESKTOP="`lsb_release -cs`"
     - CI_SOURCE_PATH=$(pwd)
     - ROSINSTALL_FILE=$CI_SOURCE_PATH/dependencies.rosinstall
