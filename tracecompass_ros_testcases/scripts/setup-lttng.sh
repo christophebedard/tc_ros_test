@@ -36,4 +36,4 @@ do
     lttng enable-event --kernel --channel=kchan $event
 done
 
-lttng enable-event -k --syscall --all
+# lttng enable-event -k --syscall --all
