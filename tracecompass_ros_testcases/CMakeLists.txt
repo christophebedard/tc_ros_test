@@ -40,3 +40,23 @@ add_executable(instance_node
 target_link_libraries(instance_node
     ${catkin_LIBRARIES}
 )
+
+# nodes_pipeline
+add_executable(node_f
+    src/nodes_pipeline/node_f.cpp
+)
+target_link_libraries(node_f
+    ${catkin_LIBRARIES}
+)
+add_executable(node_m
+    src/nodes_pipeline/node_m.cpp
+)
+target_link_libraries(node_m
+    ${catkin_LIBRARIES}
+)
+add_executable(node_l
+    src/nodes_pipeline/node_l.cpp
+)
+target_link_libraries(node_l
+    ${catkin_LIBRARIES}
+)

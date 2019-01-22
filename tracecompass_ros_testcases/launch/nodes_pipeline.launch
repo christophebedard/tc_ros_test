@@ -1,0 +1,23 @@
+<!--
+ \file nodes_pipeline.launch
+ \brief Launch file for the nodes_pipeline test case
+ \author Christophe Bedard
+-->
+
+<launch>
+    <node pkg="tracecompass_ros_testcases" type="node_f" name="node_0" output="screen" >
+        <param name="i" type="int" value="0" />
+    </node>
+
+    <node pkg="tracecompass_ros_testcases" type="node_m" name="node_1" output="screen" >
+        <param name="i" type="int" value="1" />
+    </node>
+
+    <node pkg="tracecompass_ros_testcases" type="node_m" name="node_2" output="screen" >
+        <param name="i" type="int" value="2" />
+    </node>
+
+    <node pkg="tracecompass_ros_testcases" type="node_l" name="node_3" output="screen" >
+        <param name="i" type="int" value="3" />
+    </node>
+</launch>
