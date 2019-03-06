@@ -24,3 +24,12 @@ Some test traces are available in [`traces/`](./traces/). The scripts used to ge
     Publisher publishes 10 messages right away, but latching is enabled.
 
 * `multi_instances`: multiple instances (different names) of the same node (type)
+
+# Setup necessary repos
+
+Using [`vcstool`](https://github.com/dirk-thomas/vcstool)
+
+```
+cd ws/src/
+vcs import < tracecompass_ros_testcases/.repos
+```

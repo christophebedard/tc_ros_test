@@ -1,0 +1,17 @@
+repositories:
+  ros:
+    type: git
+    url: https://github.com/christophebedard/ros.git
+    version: kinetic-devel
+  ros_comm:
+    type: git
+    url: https://github.com/christophebedard/ros_comm.git
+    version: tc4ros
+  tracecompass_ros_testcases:
+    type: git
+    url: https://github.com/christophebedard/tracecompass_ros_testcases.git
+    version: melodic-devel
+  tracetools:
+    type: git
+    url: https://github.com/christophebedard/tracetools.git
+    version: tc4ros
