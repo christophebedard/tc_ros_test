@@ -7,6 +7,10 @@ repositories:
     type: git
     url: https://github.com/christophebedard/ros_comm.git
     version: tc4ros
+  roscpp_core:
+    type: git
+    url: https://github.com/christophebedard/roscpp_core.git
+    version: tc4ros
   tracecompass_ros_testcases:
     type: git
     url: https://github.com/christophebedard/tracecompass_ros_testcases.git
