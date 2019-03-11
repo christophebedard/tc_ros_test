@@ -4,3 +4,4 @@
 ./${BASH_SOURCE%/*}/gen_pub_sub_10.sh
 ./${BASH_SOURCE%/*}/gen_pub_sub_latching.sh
 ./${BASH_SOURCE%/*}/gen_multi_instances.sh
+./${BASH_SOURCE%/*}/gen_nodes_pipeline.sh
