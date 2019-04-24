@@ -17,14 +17,24 @@ do
 	lttng enable-event -c roscpp -u $event 
 done
 
+lttng enable-event --kernel lttng_logger
+
 # process context
 lttng add-context -c roscpp -u \
   -t vpid -t procname \
   -t vtid -t perf:thread:instructions \
   -t perf:thread:cycles -t perf:thread:cpu-cycles
 
-# kernel
+#kernel
 lttng enable-channel --kernel kchan --subbuf-size=8M
+
+# network
+for event in net_dev_queue netif_receive_skb net_if_receive_skb
+do
+    lttng enable-event --kernel --channel=kchan $event
+done
+
+# other kernel stuff
 for event in sched_switch sched_waking sched_pi_setprio sched_process_fork sched_process_exit sched_process_free sched_wakeup\
     irq_softirq_entry irq_softirq_raise irq_softirq_exit irq_handler_entry irq_handler_exit\
     lttng_statedump_process_state lttng_statedump_start lttng_statedump_end lttng_statedump_network_interface lttng_statedump_block_device\
