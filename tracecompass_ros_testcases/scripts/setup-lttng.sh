@@ -3,7 +3,7 @@
 ## From: https://github.com/bosch-robotics-cr/tracetools/blob/devel/scripts/setup-lttng-roscpp.sh
 
 # set up ust roscpp events
-for event in roscpp:new_connection roscpp:callback_added roscpp:timer_added\
+for event in roscpp:new_connection roscpp:connection_dropped roscpp:callback_added roscpp:timer_added\
     roscpp:callback_start roscpp:callback_end roscpp:publisher_link_handle_message\
     roscpp:subscription_message_queued roscpp:subscription_message_dropped\
     roscpp:subscriber_callback_start roscpp:subscriber_callback_end\
